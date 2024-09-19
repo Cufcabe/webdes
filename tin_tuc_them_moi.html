@@ -8,6 +8,7 @@
     <meta name="author" content="Viện Công nghệ Thông tin và Kinh tế số - Đại học Kinh tế Quốc dân">
     <link rel="shortcut icon" type="image/png" href="./img/favicon.png"/>
     <title>Tin tức</title>
+    <script src="./js/ckeditor/ckeditor.js"></script>
 </head>
 <body>
 
@@ -15,8 +16,28 @@
         <a href="./index.html">Trang chủ</a> | <a href="./gioi_thieu.html">Giới thiệu</a> | <a href="./san_pham.html">Sản phẩm</a> | <a href="./lien_he.html">Liên hệ</a> | <a href="./dang_nhap.html">Đăng nhập</a>
     </p>
 
-    <p>Đây là trang Tin tức.</p>
+    <h3 style="text-align: center;">THÊM MỚI TIN TỨC</h3>
+    <form action="./thuc_hien_them_moi_tin_tuc.html" method="post">
+        <p>Title: <input type="text" name="txtTilte" value=""></p>
+        <p>Description: <input type="text" name="txtDescription" value=""></p>
+        <p>Image: <input type="file" name="txtImage"></p>
+        <p>Post content<textarea id="Postcontent" name="txtPostcontent"></p>
+        <p>
+            <select>
+                <option value="1">Post</option>
+                <option value="2">Save draft</option>
+            </select>
+        </p>
+        <button>Add</button>
+    </form>
 
+    <script>
+        CKEDITOR.replace('Postcontent', {
+          height: 200,
+          baseFloarZIndex: 1005,
+          removeButtons: 'PasteFromWord'
+        });
+    </script>
 
     <hr />
     <p style="color:brown; text-align: right; font-style: italic;">Bản quyền thuộc về: <a href="https://cufcabe.github.io/webdes" target="_blank">Đinh Nguyễn Hải Long</a>, <a href="https://neu.edu.vn/" target="_blank">Đại học Kinh tế Quốc dân</a></p>
