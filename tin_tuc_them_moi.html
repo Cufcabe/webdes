@@ -21,18 +21,19 @@
         <p>Title: <input type="text" name="txtTilte" value=""></p>
         <p>Description: <input type="text" name="txtDescription" value=""></p>
         <p>Image: <input type="file" name="txtImage"></p>
-        <p>Post content<textarea id="Postcontent" name="txtPostcontent" rows="10" cols="80"></textarea></p>
         <p>
             <select name="txtOption">
                 <option value="1">Post</option>
                 <option value="2">Save draft</option>
             </select>
         </p>
+        <p>Post content<textarea id="txtPostcontent" name="txtPostcontent" rows="10" cols="80"></textarea></p>
+
         <button>Add</button>
     </form>
 
     <script>
-        CKEDITOR.replace('Postcontent', {
+        CKEDITOR.replace('txtPostcontent', {
           height: 200,
           baseFloarZIndex: 1005,
           removeButtons: 'PasteFromWord'
