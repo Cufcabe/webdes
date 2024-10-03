@@ -1,9 +1,16 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*background-image: url('../img/Background01.jpg');
+    background-position: bottom center;
+    background-repeat: repeat-x;
+    min-height: 1000;*/
 }
 
 header {
-    background: #a0e597;
+    background: #1abc9c;
+    /*background-image: url('../img/Background01.jpg');
+    background-size: auto;
+    background-repeat: no-repeat;*/
     color: white;
     padding: 60px;
     text-align: center;
@@ -11,4 +18,50 @@ header {
 
 p {
     color:blueviolet;
+    opacity: 1;
+}
+
+.tags {
+    color: black;
+    width: 100px !important;
+    margin: 5px;
+}
+
+#SubmitButton {
+    text-transform: uppercase;
+    padding: 5px 10px;
+    background-color: cadetblue;
+    font-weight: bold;
+    color: azure;
+}
+
+div p {
+    background-color: yellow;
+    border: 1px solid;
+}
+
+a:link {
+    color:black;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: chocolate;
+}
+
+a:active {
+    color: chocolate;
+}
+
+#border {
+    border: 2px black dashed;
+}
+
+td {
+    vertical-align: middle;
+    text-align: center;
 }
